@@ -24,55 +24,34 @@
     Variaveis: const: usado para definir uma variavel que seja constante, que não pode ser alterada (atribuida um novo valor);
                let: usado para definir uma variavel que possa ser alterada (atribuida um novo valor);
                var: parecido com o let, mas nao é mais utilizado. ele consegue rodar um codigo sem declarar um valor, undefined.
-   
-   
-   
-Operadores aritméticos:   resto da divisão % 
-                                 ex: let resto = 12 % 5;
-console.log(resto); // 2
-math.sqrt(x): retorna a raiz quadrada de um numero(x)
-math.pow(x, y) isso equivale a isso (x) ** (y): potenciação
+    
+    Operadores aritméticos:	resto da divisão % 
+				let resultado = x + y;
+				resultado = x - y;
+				resultado = x * y;
+				resultado = x / y;
 
-exemplo 1: let x = 10, y = 2;
-let resultado = x + y;
-console.log(resultado); // 12
-resultado = x - y;
-console.log(resultado); // 8
-resultado = x * y;
-console.log(resultado); // 20
-resultado = x / y;
-console.log(resultado); // 5
+				x = x + 3; isso é equivalente a isso x += 3;
+				x = x - 3; isso é equivalente a isso x -= 3;
+				x = x * 3; isso é equivalente a isso x *= 3;
+				x = x / 3; isso é equivalente a isso x /= 3;
 
-exemplo 2: let x = 12;
-x = x + 3; isso é equivalente a isso x += 3;
-x = x - 3; isso é equivalente a isso x -= 3;
-x = x * 3; isso é equivalente a isso x *= 3;
-x = x / 3; isso é equivalente a isso x /= 3;
-console.log(x);
+				x++; é equivalente a x = x + 1 e equivalente a x +=1; primeiro retorna e depois soma o valor de x
+				x– ;é equivalente a x = x - 1 e equivalente a x -=1; primeiro retorna e depois subtrai o valor de x
+				++x: primeiro soma e depois retorna o valor de x
+				–x; primeiro subtrai e depois retorna o valor de x
+                           
+    math.sqrt(x): retorna a raiz quadrada de um numero(x)
+    math.pow(x, y) isso equivale a isso (x) ** (y): potenciação
+    math.toFixed(2)
+    math.round(2)
 
-x++; é equivalente a x = x + 1 e equivalente a x +=1; primeiro retorna e depois soma o valor de x
-x– ;é equivalente a x = x - 1 e equivalente a x -=1; primeiro retorna e depois subtrai o valor de x
-++x: primeiro soma e depois retorna o valor de x
-–x; primeiro subtrai e depois retorna o valor de x
+    concatenar strings:	let nomeCompleto = nome + " " + sobrenome;
+				console.log(nomeCompleto); // Amanda Aureliano
 
-exemplo com string template:
-let x = 10, y = 2;
-resultado = x - y;
-console.log(`A subtração de ${x} e ${y} é ${resultado}`); // A subtração de 10 e 2 é 8
-resultado = x * y;
-console.log(`A multiplicação de ${x} e ${y} é`, resultado); // A multiplicação de 10 e 2 é 20
+    infinity: a resposta é perto do infinito
+    NaN: a resposta nao é um numero real
 
-concatenar strings: exemplo
-let nome = "Amanda";
-let sobrenome = "Aureliano";
-let nomeCompleto = nome + " " + sobrenome;
-console.log(nomeCompleto); // Amanda Aureliano
-
-infinity: a resposta é perto do infinito
-NaN: a resposta nao é um numero real
-
-.toFixed(2)
-.round(2)
 
 operadores de comparação:    > (maior) >=(maior ou igual)
 < (menor) <= (menor ou igual)
