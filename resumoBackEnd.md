@@ -56,18 +56,18 @@
     Operador de negação: ! ex: !temIngresso = falso
 
     Operadores de comparação:	> (maior) >=(maior ou igual)
-				< (menor) <= (menor ou igual)
+					< (menor) <= (menor ou igual)
 
     Operadores de igualdade:	== comparação
-				= afirmação
-				!= diferente
+					= afirmação
+					!= diferente
     
     Operadores de identidade:	=== idêntico (conteúdo e tipo igual)
-				!== não idêntico
+					!== não idêntico
 	
     Condicionais:	if (condição) {
-      			} else if (condição) {
-      			} else {}
+      		} else if (condição) {
+      		} else {}
 	
     E lógico: &&
     OU lógico: ||
