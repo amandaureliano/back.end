@@ -51,3 +51,54 @@ let nome = "Amanda";
 let sobrenome = "Aureliano";
 let nomeCompleto = nome + " " + sobrenome;
 console.log(nomeCompleto); // Amanda Aureliano
+
+9. Truthiness
+if (apelido) {
+  console.log(apelido);
+} else if (sobrenome) {
+    console.log(primeiroNome + " " + sobrenome);
+} else {
+    console.log(primeiroNome);
+}
+
+10. Ternário
+const saldo = 10;
+const unidade = (saldo === 1 ? “real” : “reais”);
+console.log(`Você tem ${saldo} ${unidade}`); 
+typeof variável == 'number' // retorna o tipo da variável
+array.includes(variável) // vai pegar a variável e incluir na array, se a variável já existir vai retornar true
+
+11.
+const caractere = "E";
+
+if (caractere === "A" || caractere === "E" || caractere === "I" || caractere === "O" || caractere === "U") {
+     console.log("Vogal maiúscula");
+} else if (caractere === "a" || caractere === "e" || caractere === "i" || caractere === "o" || caractere === "u") {
+     console.log("Vogal minúscula");
+} else if (typeof caractere == 'number') {
+     console.log("Número");
+} else {
+     console.log("Consoante");
+}
+
+12.
+let minusculas = ['a', 'e', 'i', 'o', 'u'];
+let maiúsculas = ['A', 'E', 'I', 'O', 'U'];
+let resultado;
+
+resultado = maiúsculas.includes(caractere) ? "Vogal maiúscula" :
+            minusculas.includes(caractere) ? "Vogal minúscula" :
+typeof caractere == 'number' ? "Número" : "Consoante"
+
+if (maiúsculas.includes(caractere)) {
+    resultado = "Vogal maiúscula";
+} else if (minusculas.includes(caractere)) {
+    resultado = "Vogal minúscula";
+} else if (typeof caractere == 'number') {
+    resultado = "Número";
+} else {
+    resultado = "Consoante";
+}
+console.log(resultado);
+
+13.
