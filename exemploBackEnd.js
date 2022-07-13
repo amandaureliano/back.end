@@ -101,4 +101,78 @@ if (maiúsculas.includes(caractere)) {
 }
 console.log(resultado);
 
-13.
+13. 
+const paises = ['Brasil', 'Russia', 'India', 'China', 'África do Sul'];
+
+paises.push('Madagascar'); // [ 'Brasil', 'Russia', 'India', 'China', 'África do Sul', 'Madagascar' ]
+paises.pop(); // [ 'Brasil', 'Russia', 'India', 'China', 'África do Sul' ]
+paises.unshift('França'); // [ 'França', 'Brasil', 'Russia', 'India', 'China', 'África do Sul' ]
+paises.shift(); // [ 'Brasil', 'Russia', 'India', 'China', 'África do Sul' ]
+
+const ultimo = paises[paises.length - 1];
+console.log(ultimo); // África do Sul
+console.log(paises[1]); // Russia
+console.log(paises[2]); // India
+
+14.
+const numeros = [12, 13, 07, 98, 09];
+
+let i = 0;
+
+//enquanto o i for menor que o tamanho do array
+while (i < numeros.length) {
+    // executar isso
+    console.log(numeros[i]);
+    i++;
+}
+
+15.
+const numeros = [12, 13, 07, 98, 09, 95, 01, 66]; // tamanho 8
+let soma = 0;
+
+for (let i = 0; i < numeros.length; i++) {
+    // será executado para i de 0 a 7 | 8 não será executado
+    soma = soma + numeros[i];
+    //soma += numeros[i]; isso é exatamente igual a linha de cima
+    console.log(soma);  // 12   25  32  130 139 234 235 301
+}
+
+16.
+const palavra = 'Alemanha';
+let encontrado = false;
+
+for (let letra of palavra) {
+    if (letra === 'h') {
+        console.log('Tem a letra h');
+        encontrado = true;
+        break;
+    }
+}
+
+if (!encontrado) {
+    console.log('não tem h');
+}
+
+17.
+const palavra = 'abracadabra';
+let quantidade = 0;
+
+for (let letra of palavra) {
+    if (letra === 'a') {
+        quantidade++;
+    }
+}
+console.log(quantidade);
+
+18.
+for (let i = 10; i >= 0; i--) {
+    console.log(i);
+} // 10 9 8 7 6 5 4 3 2 1 0
+
+exercicio 6: 
+let numero = 2;
+
+while (numero <= 50) {
+    console.log(numero);
+    numero += 2;
+}
