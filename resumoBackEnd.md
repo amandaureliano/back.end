@@ -82,59 +82,12 @@
 	
      Arrays: vetores ou listas, servem para guardar um conjunto de dados ordenados numa mesma variavel.
 	ex: const nomes = ['josé', 'joão', 'maria'];
+	
      indice(index) de um array: é a posição de cada item na lista, sempre começando pelo 0
      o ultimo item da lista tem sempre index = lenght - 1
+	
 	const nomesEstudantes = ['jose', 'joão', 'maria', 'joana', 'andre'];
 	console.log(nomesEstudantes);
-
-console.log(nomesEstudantes[0]); // jose
-console.log(nomesEstudantes[1]); // joao
-console.log(nomesEstudantes[2]); // maria
-console.log(nomesEstudantes[3]); // joana
-console.log(nomesEstudantes[4]); // andre
-console.log(nomesEstudantes[5]); // undefined
-
-const notasEstudantes = [0, 10, 5, 7, 9];
-console.log(notasEstudantes);
-
-nomesEstudantes[0] = 'andreia'; // substitui o jose por andreia
-const x = 3;
-nomesEstudantes[x] = 'andreia'; // substitui a joana por andreia utilizando o hard code
-nomeDaVariavel.length = tamanho do array
-ex: console.log(nomesEstudantes.length); // tamanho do array 5, sempre 1+ que o index do array
-nomesEstudantes[nomesEstudantes.length] = 'pedro' // isso, vai adicionar o pedro sempre no ultimo indice
-nomesEstudantes.push('pedro'); // isso é exatamente igual a linha acima (para colocar no ultimo item do array)
-nomesEstudantes.pop(); // para tirar o ultimo item do array
-nomesEstudantes.shift(); // tira o primeiro item do array
-nomesEstudantes.unshift(‘jose’); // adiciona no primeiro item do array
-
-while: enquanto, alguma coisa for verdade ele vai executar um bloco de código
-exemplo: 
-const nomesEstudantes = ['jose', 'joao', 'maria', 'joana', 'andre'];
-let indice = 0;
-
-while (indice < nomesEstudantes.length) {   //enquanto
-    console.log(nomesEstudantes[indice]);
-    indice++;
-} // jose   joao    maria   joana   andre
-
-for: for (declaração da variavel; até quando eu quero que seja executado; o que eu quero fazer ao final de cada interação) {}
-exemplo:
-const nomesEstudantes = ['jose', 'joao', 'maria', 'joana', 'andre'];
-for (let i = 0; i < nomesEstudantes.length; i++) {
-    console.log(nomesEstudantes[i]);
-}
-
-	sintaxe:	for (let item of array) {
-    O código entre as chaves se repetirá uma vez para cada item do array
-}
-código:	for (let nome of nomes) {
-    console.log(nome);
-}
-exemplo: const nomes = ['jose', 'joao', 'maria', 'joana', 'andre'];
-
-for (let nome of nomes) {
-    console.log(nome);
-}
-
-break: interrompe o loop.
+	console.log(nomesEstudantes[0]); // jose
+	console.log(nomesEstudantes[5]); // undefined
+	nomesEstudantes[0] = 'andreia'; // substitui o jose por andreia
