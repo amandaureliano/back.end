@@ -64,4 +64,11 @@
                 }
                 
     
-    - 
+    - desestruturação de objetos fora de um array:
+    
+                const vitoria = {
+                    gostaDeBTS: true,
+                    genero: "F"
+                }
+                
+                const (gostaDeBTS, genero} = vitoria;
