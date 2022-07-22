@@ -1,10 +1,4 @@
-<html>
-
-   <head>
-       <ul> <h1> COMANDOS TERMINAL </h1> </ul>
-    </head>
-
-<body>
+<h1> COMANDOS TERMINAL </h1>
 
     git init: inicializa um novo repositório local vazio.
     git clone (+url): clona/baixa um repositório do servidor (remoto) no seu computador (local).
